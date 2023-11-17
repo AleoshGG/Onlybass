@@ -9,8 +9,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+
+    <header id="header">
+        <img src="public/Onlybass.png" alt="logo" width="100px" height="100px">
+        <h1>Jackson Bass Preventa</h1>
+    </header>
+
+    <div class="content">
+        <div id="firstimage">
+            <img src="public/Jackson01.png" alt="Jackson"  height="450px">
+        </div>
+        <div id="description">
+            <section class="container">
+                <h1>¡Compra ahora el tuyo!</h1>
+                <p>La preventa termina en</p>
+                <div class="charts">
+                    <div class="chart">
+                        <!-- un circulo inicial de fondo -->
+                        <div class="circle center-abs"></div>
+                        <!-- area para SVG -->
+                        <svg class="center-abs" width="150" height="150">
+                            <!-- un segundo circulo en SVG con su ubicacion en coordenadas x,y y el radio de expansion -->
+                            <circle class="outer" cx="75" cy="75" r="33" />
+                        </svg>
+                        <!-- etiqueta para el contador, en este caso el dia -->
+                        <span class="textt center-abs" id="days"></span>
+                        <h3>Dias</h3>
+                    </div>
+                    <div class="chart">
+                        <div class="circle center-abs"></div>
+                        <svg class="center-abs" width="150" height="150">
+                            <circle class="outer" cx="75" cy="75" r="33" />
+                        </svg>
+                        <span class="textt center-abs" id="hours"></span>
+                        <h3>Horas</h3>
+                    </div>
+                    <div class="chart">
+                        <div class="circle center-abs"></div>
+                        <svg class="center-abs" width="150" height="150">
+                            <circle class="outer" cx="75" cy="75" r="33" />
+                        </svg>
+                        <span class="textt center-abs" id="minutes"></span>
+                        <h3>Minutos</h3>
+                    </div>
+                    <div class="chart">
+                        <div class="circle center-abs"></div>
+                        <svg class="center-abs" width="150" height="150">
+                            <circle class="outer" cx="75" cy="75" r="33" />
+                        </svg>
+                        <span class="textt center-abs" id="seconds"></span>
+                        <h3>Segundos</h3>
+                    </div>
+                </div>
+                <h2>BAJO ELECTRICO JACKSON JS3 SPECTRA V WALNUT STAIN</h2>
+                <li id="li1">Precio $6,000.00 MXN</li>
+                <li id="li2">Disponible</li>
+                <div data-tooltip="¡Ahora!" class="button">
+                    <div class="button-wrapper">
+                      <div class="text">Comprar</div>
+                        <span class="icon">
+                          <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                    </svg>
+                        </span>
+                      </div>
+                    </div>                    
+            </section>
+        </div>
+    </div>
+
 </body>
 </html>

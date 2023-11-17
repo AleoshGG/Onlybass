@@ -1,3 +1,238 @@
 * {
     font-family: 'Nunito', sans-serif;
 }
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.content {
+    margin-top: 60px;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#firstimage {
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#description {
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 600px;
+}
+.container h1,
+.container p{
+    color:#000000;
+    text-align: center;
+}
+.container h1{
+    font-size: 50px;
+}
+.container p{
+    margin-top: -25px;
+    font-size: 25px;
+}
+.container h2 {
+    margin-top: -20%;
+    margin-left: 25px;
+}
+
+.container li {
+    
+    margin-left: 50px;
+}
+.center-abs{
+    top:12%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+}
+.charts{
+    display: flex;
+}
+.chart{
+    position: relative;
+    width:25%;
+    height: 260px;
+}
+.chart h3{
+    color:#fff;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 80px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 10px #000;
+}
+.chart svg{
+    z-index: 2;
+}
+/* DIV CIRCULO DE FONDO */
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index:1;
+    border:5px #baeaff solid;
+}
+.textt{
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color:#0096da
+}
+/* SVG CIRCULO */
+.outer{
+    fill:transparent;
+    stroke: #0096da;
+    stroke-width: 6px; /* grosor del borde */
+    stroke-dasharray: 239; /* numero de relleno del borde, se usa el mismo valor en el script.js */
+    transform: rotate(270deg) translate(-150px, 0); 
+    /* giramos el circulo para que su apertura sea en la parte superior 
+    y ajustamos su posicion
+    */
+}
+
+#li1 {
+    list-style-image: url(public/precio.svg);
+}
+
+#li2 {
+    list-style-image: url(public/aceptar.svg);
+}
+
+.button {
+    margin-left: 45%;
+    margin-top: 10px;
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #222;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #222;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  
+  
+  
