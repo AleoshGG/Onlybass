@@ -233,6 +233,21 @@
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
   }
   
+  #contenidoDos {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 100%;
+  }
+
+  .titulos {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
   
+  #lista {
+    margin-left: 10%;
+  }
   
   
