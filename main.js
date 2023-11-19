@@ -1,7 +1,7 @@
 //parte del contador regresivo
 // Set the date we're counting down to
 // Establecer la fecha aqui, en formato ingles
-var countDownDate = new Date("2023-11-21T00:00:00").getTime();
+var countDownDate = new Date("2023-12-25T00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -39,7 +39,7 @@ effectCircle = function(d, h, m, s){
 
     // valor del relleno del contorno
     // ojo es el mismo establecido en la hoja de estilos
-    const strokeDashoffset = 239; 
+    const strokeDashoffset = 216; 
 
     var circleSVG = document.getElementsByClassName('outer');
 
