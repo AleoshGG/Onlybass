@@ -1,8 +1,11 @@
 * {
     font-family: 'Nunito', sans-serif;
+    background-color: #e9f1f1;
+    background-image: linear-gradient(45deg, #e9f1f1 0%, #f57d99 100%);
 }
 
 #header {
+    background: repeat;
     position: absolute;
     width: 100%;
     height: 120px;
@@ -12,6 +15,7 @@
 }
 
 .content {
+  background: repeat;
     margin-top: 60px;
     position: absolute;
     width: 100%;
@@ -21,6 +25,7 @@
 }
 
 #firstimage {
+  background: repeat;
     position: relative;
     width: 30%;
     display: flex;
@@ -33,30 +38,36 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: repeat;
 }
 
 .container{
+  background: repeat;
     max-width: 600px;
 }
 .container h1,
 .container p{
     color:#000000;
     text-align: center;
+    background: repeat;
 }
 .container h1{
     font-size: 50px;
+    background: repeat;
 }
 .container p{
     margin-top: -25px;
     font-size: 25px;
+    background: repeat;
 }
 .container h2 {
     margin-top: -20%;
     margin-left: 25px;
+    background: repeat;
 }
 
 .container li {
-    
+  background: repeat;
     margin-left: 50px;
 }
 .center-abs{
@@ -64,16 +75,20 @@
     left:50%;
     transform:translate(-50%, -50%);
     position: absolute;
+    background: repeat;
 }
 .charts{
+  background: repeat;
     display: flex;
 }
 .chart{
+  background: repeat;
     position: relative;
     width:25%;
     height: 260px;
 }
 .chart h3{
+  background: repeat;
     color:#fff;
     font-size: 20px;
     position: absolute;
@@ -83,6 +98,7 @@
     text-shadow: 1px 1px 10px #000;
 }
 .chart svg{
+  background: repeat;
     z-index: 2;
 }
 /* DIV CIRCULO DE FONDO */
@@ -352,4 +368,84 @@
   margin-left: 15%;
 }
 
-  
+#pie {
+  position: absolute;
+  width: 100%;
+  top: 290%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pies {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.pies > img {
+  border-radius: 50%;
+  margin-left: 7%;
+}
+
+.pies > p {
+  text-align: justify;
+  font-size: 13px;
+  max-width: 30ch;
+  margin-left: 2%;
+}
+
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-left: 3%;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+}

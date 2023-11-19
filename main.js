@@ -117,3 +117,6 @@ function funcionEjecutar(side){
    elements[siguienteElement].style.zIndex =1;
 }
 
+function insta(url) {
+    window.location.href = url;
+}
