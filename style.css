@@ -314,11 +314,42 @@
 #family {
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 560px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  top: 190%;
+}
+
+#titulos {
+  position: absolute;
+  width: 50%;
   top: 170%;
+  left: 45%;
+  height: 30px;
+}
+#family > hr {
+  border-radius: 2px;
+  border: 2px double #000000;
+}
+.family {
+  width: 33.33%;
+}
+.Jackson {
+    margin-top: 25px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.Jackson:hover .image {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.Jackson {overflow:hidden;}
+
+.parrafos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 35ch;
+  margin-left: 15%;
 }
 
   
