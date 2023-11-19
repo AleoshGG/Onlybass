@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="main.js"></script>
+    <script defer src="main.js"></script>
 </head>
 <body>
 
@@ -102,7 +103,55 @@
                 <li>Número de trastes: 24</li>
             </div>
         </div>
-        <div id="contentcarrusel"></div>
+        <div id="contentcarrusel">
+            <section id="container-slider">    
+                <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+                <ul class="listslider">
+                  <a itlist="itList_0" ></a>
+                  <a itlist="itList_1" ></a>
+                  <a itlist="itList_2" ></a>
+                  <a itlist="itList_3" ></a>
+                  <a itlist="itList_4" ></a>
+                  <a itlist="itList_5" ></a>
+                </ul>
+                <ul id="slider">
+                  <li style="background-image: url('public/Jackson.webp'); z-index:0; opacity: 1;">
+                        <div class="content_slider" >
+                        </div>
+                  </li>
+                  <li style="background-image: url('public/Jackson01.webp'); ">
+                        <div class="content_slider" >
+                        </div>
+                  </li>
+                  <li style="background-image: url('public/Jackson02.webp');">
+                        <div class="content_slider" >
+                        </div>
+                  </li>
+                  <li style="background-image: url('public/Jackson04.webp');">
+                    <div class="content_slider" >
+                    </div>
+                 </li>
+                 <li style="background-image: url('public/Jackson05.webp');">
+                    <div class="content_slider" >
+                    </div>
+                    </li>
+                 <li style="background-image: url('public/Jackson06.webp');">
+                     <div class="content_slider" >
+                        </div>
+                 </li>
+               </ul>
+             </section>
+        </div>
     </div>
+
+    <div id="family">
+        <div class="family"></div>
+        <hr>
+        <div class="family"></div>
+        <hr>
+        <div class="family"></div>
+    </div>
+    
 </body>
 </html>

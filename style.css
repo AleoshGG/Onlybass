@@ -238,16 +238,87 @@
     width: 100%;
     height: 500px;
     top: 100%;
+    display: flex;
+    flex-direction: row;
   }
 
-  .titulos {
+#descripcion {
     width: 40%;
+}
+  .titulos {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
   
   #lista {
-    margin-left: 10%;
+    margin-left: 20%;
+    list-style-image: url(public/aceptar.svg);
   }
-  
+
+#contentcarrusel {
+  height: 500px;
+  width: 60%;
+}
+
+#container-slider
+{
+    position: relative;
+    display: block;
+    width: 78%;
+    transform: rotate(90deg);
+    
+}
+#slider {
+    margin-left: 80px;
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 70vh;
+    min-height: 300px;
+}
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+.content_slider{
+    padding: 15px 30px;
+    color: #FFF;
+    width: 50%;
+    height: 130%;
+    border-radius: 5px;   
+    margin-top: -50px;
+}
+
+#slider li .content_slider{
+    margin-left: 0px;
+    background: rgba(113, 113, 113, 0.09);
+    padding: 3px 93px;
+}
+
+#family {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 170%;
+}
+
   
