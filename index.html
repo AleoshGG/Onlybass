@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modal.css">
     <script src="main.js"></script>
-    <script defer src="main.js"></script>
 </head>
 <body>
 
@@ -24,7 +24,7 @@
             <img src="public/Jackson01.png" alt="Jackson"  height="450px" style="background: repeat;">
         </div>
         <div id="description">
-            <section class="container">
+            <section class="container" >
                 <h1>¡Compra ahora el tuyo!</h1>
                 <p>La preventa termina en</p>
                 <div class="charts">
@@ -68,16 +68,74 @@
                 <h2>BAJO ELECTRICO JACKSON JS3 SPECTRA V WALNUT STAIN</h2>
                 <li id="li1">Precio $6,000.00 MXN</li>
                 <li id="li2">Disponible</li>
-                <div data-tooltip="¡Ahora!" class="button">
+                <div data-tooltip="¡Ahora!" class="button" id="btn-abrir-modal">
                     <div class="button-wrapper">
-                      <div class="text">Comprar</div>
+                      <div class="text" >Comprar</div>
                         <span class="icon">
                           <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
                     </svg>
                         </span>
                       </div>
-                    </div>                    
+                    </div> 
+                    <dialog id="modal">
+                        <section class="container">
+                            <header style="background: none;">¡Compra ahora!
+                                <button id="btn-cerrar-modal">x</button>
+                            </header>
+                            <form class="form" action="#" method="dialog" style="background: none;">
+                                <div class="input-box" style="background: none;">
+                                    <label style="background: none;">Nombre completo</label>
+                                    <input required="" placeholder="Nombre" type="text" >
+                                </div>
+                                <div class="column" style="background: none;">
+                                    <div class="input-box" style="background: none;">
+                                      <label style="background: none;">Telefono</label>
+                                      <input required="" placeholder="+12 (123) 456 7890" type="telephone">
+                                    </div>
+                                    <div class="input-box" style="background: none;">
+                                      <label style="background: none;">Email</label>
+                                      <input required="" placeholder="email@ejemplo.com" type="email">
+                                    </div>
+                                </div>
+                                <div class="gender-box" style="background: none;"> 
+                                  <label style="background: none;">Metodo de pago</label>
+                                  <div class="gender-option" style="background: none;">
+                                    <div class="gender" style="background: none;">
+                                      <input checked="" name="gender" id="check-male" type="radio">
+                                      <label for="check-male" style="background: none;">Efectivo</label>
+                                    </div>
+                                    <div class="gender" style="background: none;">
+                                      <input name="gender" id="check-female" type="radio">
+                                      <label for="check-female" style="background: none;">Deposito</label>
+                                    </div>
+                                    <div class="gender" style="background: none;">
+                                      <input name="gender" id="check-other" type="radio">
+                                      <label for="check-other" style="background: none;">Transferencia</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-box address" style="background: none;">
+                                  <label style="background: none;">Direccion</label>
+                                  <input required="" placeholder="Direccion" type="text">
+                                  <div class="column" style="background: none;">
+                                    <div class="select-box" style="background: none;">
+                                      <select style="background: none;">
+                                        <option hidden="">Pais</option>
+                                        <option>USA</option>
+                                        <option>Mexico</option>
+                                        <option>Alemania</option>
+                                        <option>Italia</option>
+                                      </select>
+                                    </div>
+                                  <input required="" placeholder="Ciudad" type="text">
+                                  </div>
+                                </div>
+                                <button>¡Comprar!</button>
+                            </form>
+                          </section>
+                    </dialog>        
+                    <script src="modal.js"></script>          
             </section>
         </div>
     </div>

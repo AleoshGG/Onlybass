@@ -120,3 +120,4 @@ function funcionEjecutar(side){
 function insta(url) {
     window.location.href = url;
 }
+

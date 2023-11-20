@@ -15,7 +15,7 @@
 }
 
 .content {
-  background: repeat;
+    background: repeat;
     margin-top: 60px;
     position: absolute;
     width: 100%;
@@ -39,10 +39,11 @@
     align-items: center;
     flex-direction: column;
     background: repeat;
+    margin-top: -50px;
 }
 
 .container{
-  background: repeat;
+    background: repeat;
     max-width: 600px;
 }
 .container h1,
@@ -108,7 +109,7 @@
     height: 50px;
     border-radius: 50%;
     z-index:1;
-    border:5px rgb(244, 65, 175)solid;
+    border:5px rgb(113, 244, 65)solid;
 }
 .textt{
   background: repeat;
@@ -117,14 +118,13 @@
     width: 100%;
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
-    text-shadow: 2px 2px 10px rgb(12, 45, 118);
+    color: #dfdb0a;
 }
 /* SVG CIRCULO */
 .outer{
   background: repeat;
     fill:transparent;
-    stroke: rgb(255, 55, 135);
+    stroke: rgb(55, 148, 255);
     stroke-width: 6px; /* grosor del borde */
     stroke-dasharray: 216; /* numero de relleno del borde, se usa el mismo valor en el script.js */
     transform: rotate(270deg) translate(-150px, 0); 
@@ -266,7 +266,7 @@
     position: absolute;
     width: 100%;
     height: 500px;
-    top: 100%;
+    top: 110%;
     display: flex;
     flex-direction: row;
   }
