@@ -4,6 +4,28 @@
     background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% );
 }
 
+#menu{
+  position: relative;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+#espacio {
+  width: 60%;  
+  display: flex;
+  justify-content: space-around;
+  background: repeat;
+  align-items: center;
+}
+
+#espacio > a {
+  background: repeat;
+  text-decoration: none;
+  color: #fff;
+}
+
 #header {
     background: repeat;
     position: absolute;
@@ -266,7 +288,7 @@
     position: absolute;
     width: 100%;
     height: 500px;
-    top: 110%;
+    top: 120%;
     display: flex;
     flex-direction: row;
   }
@@ -352,14 +374,14 @@
   height: 560px;
   display: flex;
   flex-direction: row;
-  top: 190%;
+  top: 200%;
 }
 
 #titulos {
   background: repeat;
   position: absolute;
   width: 50%;
-  top: 170%;
+  top: 180%;
   left: 45%;
   height: 30px;
 }
@@ -397,7 +419,7 @@
   background: repeat;
   position: absolute;
   width: 100%;
-  top: 290%;
+  top: 300%;
   height: 200px;
   display: flex;
   flex-direction: row;
